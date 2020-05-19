@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    src: url("../fontovi/FontsFree-Net-Proxima-Nova-Bold.otf");
+    font-family: "pn";
+}
+@font-face {
+    src: url("../fontovi/Montserrat-Medium.otf");
+    font-family: "mm";
+}
+@font-face {
+    src: url("../fontovi/Montserrat-Light_0.otf");
+    font-family: "ml";
+}
+.body{
+    height: 100%;
+width: auto;
+position: relative;
+overflow: hidden;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    z-index: 1;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.7);
+    font-family: "pn";
+}
+header img{
+    height: 70px;
+    width: auto;
+    align-self: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-self: center;
+    margin: 0;
+    align-self: center;
+}
+.navigacija{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ul li {
+    margin-left: 15px;
+    font-family: "gb";
+    color: white;
+    font-size: 20px;
+    font-family: "pn";
+}
+.omotac{
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu{
+    height: 100%;
+    width: 100%;
+    background-color: #6dcee6;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0%;
+    left: 100%;
+}
+.ham{
+    height: auto;
+    width: 50px;
+    display: none;
+}
+.lines{
+    height: 5px;
+    width: 80%;
+    background-color: white;
+    margin-top: 5px;
+    position: relative;
+    border-radius: 30px;
+}
+@media screen and (max-width:768px){
+    .ham{
+        display: block;
+        align-self: center;
+    }
+    .navigacija ul{
+        display: none;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+.hamUl{
+    display: flex;
+    flex-direction: column;
+}
+.hamUl li {
+    margin-top: 40%;
+    font-size: 30px;
+}
+.zaglavlje{
+    height: 800px;
+    width: 100%;
+    background-image:url("../slike/zaglavljePozadina.png");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 88%, 35% 95%, 0 89%, 0% 70%, 0 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.zaglavlje span {
+color: #6bcde5;
+}
+.zaglavlje h1{
+    color: white;
+    font-family: "pn";
+}
+.zaglavlje h2{
+    margin: 0;
+}
+.opis{
+    height: auto;
+    width:auto;
+    font-family: "ml";
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.opis .opisLinija{
+    height: 1px;
+    width: 40px;
+    background-color: white;
+    align-self: center;
+}
+.zaglavlje button{
+    background-color: transparent;
+    border: 0;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-family: "mm";
+    color: white;
+    display: block;
+    padding: 5px 20px 5px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+.content{
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    display: table;
+}
+.col-md-4{
+    height: auto;
+    width: 100%;
+    padding: 40px 0 40px 0;
+}
+.col-md-4 {
+    padding: 0 40px 0 40px;
+    font-family: "mm";
+    text-align: justify;
+    margin-top: 5%;
+}
+.col-md-4 h2{
+    font-family: "pn";
+    margin-bottom: 20px;
+    text-align: center;
+}
+.oMeni{
+    height: auto;
+    width: 100%;
+}
+.col-md-6{
+    font-family: "mm";
+    text-align: justify;
+    color: black;
+    height:700px;
+}
+.col-md-6 p {
+    padding:20px;
+}
+.col-md-6 h2{
+    text-align: center;
+    font-family: "pn";
+    margin-top: 10%;
+}
+.col-md-6:nth-child(1){
+    background-image: url("../slike/omeniPozadina.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.col-md-6 img{
+    height: 40%;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+.prednosti{
+    height: 1100px;
+    width: 100%;
+    background-image: url("../slike/pozadina.png");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+}
+.prednosti .col-md-4{
+    margin:0;
+    padding: 0;
+    text-align: justify;
+    font-family: "mm";
+    margin: 20px 0 20px 0;
+}
+.prednosti h3,h1{
+text-align: center;
+font-family: "pn";
+}
+.prednosti .col-md-4 p {
+    padding: 20px;
+}
+.prednosti h1{
+    padding: 10% 0 10% 0;
+}
+.prednosti .kartice{
+    margin: 20px 0 20px 0;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5%;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+}
+@media screen and (max-width:768px){
+    .prednosti{
+        height: auto;
+    }
+    .prednosti h1{
+        font-size: 30px;
+    }
+}
+.kontakt h2{
+    text-align: center;
+    font-family: "pn";
+    padding: 20px 0 20px 0;
+    margin: 0;
+}
+.kontakt {
+    color: white;
+    background-image: url("../slike/kontaktPozadina.png");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+.social{
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.social img{
+    display: block;
+    margin: 0 auto;
+    height: 60%;
+    width: auto;
+}
+.kontakt .social h3 {
+    margin: 3% 0 3% 0;
+}
+footer{
+    height: 50px;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+}
+footer p {
+    text-align: center;
+    font-family: "pn";
+    color: white;
+    align-self: center;
+    margin: 0;
+    font-size: 20px;
+    margin-top: 10px;
+}
+/*
+Animacije
+*/
+.slideIn{
+    animation: slideIn 1s forwards;
+}
+@keyframes slideIn{
+    0%{
+        left: 100%;
+        opacity: 0;
+    }
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
+}
+.slideOut{
+    animation: slideOut 0.5s forwards;
+}
+@keyframes slideOut {
+    0%{
+        left: 0%;
+        opacity: 1;
+    }
+    100%{
+        left: 100%;
+        opacity: 0;
+    }
+}
+.shrink{
+    animation: shrink 0.5s forwards;
+}
+@keyframes shrink {
+    0%{
+        width:80%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+.expand { 
+    animation: expand 1s forwards;
+}
+@keyframes expand {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.rotateOne{
+    animation: rotateOne 1s forwards;
+}
+@keyframes rotateOne{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(405deg);
+    }
+}
+.rotateOneReverse{
+    animation: rotateOneReverse 1s forwards;
+}
+@keyframes rotateOneReverse{
+    0%{
+        transform: rotate(405deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/*
+rotacija dva
+*/
+
+
+
+
+.rotateTwo{
+    animation: rotateTwo 1s forwards;
+}
+@keyframes rotateTwo{
+    0%{
+        transform: rotate(0deg);
+        top: 0%;
+    }
+    100%{
+        transform: rotate(-405deg);
+        top: -32%;
+    }
+}
+.rotateTwoReverse{
+    animation: rotateTwoReverse 1s forwards;
+}
+@keyframes rotateTwoReverse{
+    0%{
+        transform: rotate(-405deg);
+        top: -32%;
+    }
+    100%{
+        transform: rotate(0deg);
+        top: 0%;
+    }
+}
